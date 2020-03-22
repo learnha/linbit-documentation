@@ -5,6 +5,10 @@ define run-in-docker =
 	docker run --rm -v $$(pwd):/home/makedoc/linbit-documentation linbit-documentation /bin/sh -c 'cd ~/linbit-documentation && make $(patsubst %-docker,%,$@) lang=$(lang)'
 endef
 
+all: UG9-pdf-finalize
+
+clean: 
+
 .PHONY: README.html-docker
 README.html: README.adoc
 	asciidoctor -n -o $@ $<
@@ -88,7 +92,8 @@ tech-guides-pdf-finalize-docker: dockerimage
 
 .PHONY: clean clean-all
 clean:
-	$(warning this target is reserved, maybe you look for clean-all)
+#	$(warning this target is reserved, maybe you look for clean-all)
+	make -C UG9 clean-all
 
 clean-all:
 	make -C UG8.4 clean-all

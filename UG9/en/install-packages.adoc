@@ -57,6 +57,9 @@ packages. Support for these builds, if any, is being provided by the
 associated distribution vendor. Their release cycle may lag behind
 DRBD source releases.
 
+
+
+
 [[s-install-pkgs-suse_linux_enterprise_server]]
 ==== SUSE Linux Enterprise Server
 
@@ -81,7 +84,7 @@ or
 
 
 [[s-install-pkgs-centos]]
-==== CentOS
+==== CentOS 
 
 CentOS has had DRBD 8 since release 5; for DRBD 9 you'll need to look at EPEL
 and similar sources.
@@ -89,10 +92,21 @@ and similar sources.
 DRBD can be installed using `yum` (note that you will need a
 correct repository enabled for this to work):
 
+
 ---------------------------------------
-# yum install drbd kmod-drbd
+# sudo yum install -y drbd-utils kmod-drbd
 ---------------------------------------
 
+
+
+==== CentOS 8
+
+DRBD9 can be installed using `dnf` from elrepo.org:
+
+---------------------------------------
+# sudo dnf install -y https://www.elrepo.org/elrepo-release-8.1-1.el8.elrepo.noarch.rpm
+# sudo dnf install -y drbd90-utils kmod-drbd90
+---------------------------------------
 
 [[s-install-pkgs-ubuntu_linux]]
 ==== Ubuntu Linux

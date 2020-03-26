@@ -108,6 +108,144 @@ DRBD9 can be installed using `dnf` from elrepo.org:
 # sudo dnf install -y drbd90-utils kmod-drbd90
 ---------------------------------------
 
+==== drbdutil package detail on CentOS 8
+
+---------------------------------------
+[me@centos8t01 ~]$ rpm  -qil drbd90-utils-9.10.0-2.el8.elrepo.x86_64
+Name        : drbd90-utils
+Version     : 9.10.0
+Release     : 2.el8.elrepo
+Architecture: x86_64
+Install Date: Sat 21 Mar 2020 06:27:41 PM CDT
+Group       : System Environment/Kernel
+Size        : 2301893
+License     : GPLv2+
+Signature   : DSA/SHA1, Thu 07 Nov 2019 04:33:47 PM CST, Key ID 309bc305baadae52
+Source RPM  : drbd90-utils-9.10.0-2.el8.elrepo.src.rpm
+Build Date  : Thu 07 Nov 2019 04:31:29 PM CST
+Build Host  : Build64F30.elrepo.org
+Relocations : (not relocatable)
+Vendor      : The ELRepo Project (http://elrepo.org)
+URL         : http://www.drbd.org/
+Summary     : Management utilities for DRBD
+Description :
+DRBD mirrors a block device over the network to another machine.
+Think of it as networked raid 1. It is a building block for
+setting up high availability (HA) clusters.
+
+This packages includes the DRBD administration tools and integration
+scripts for heartbeat, pacemaker, rgmanager and xen.
+/etc/bash_completion.d/drbdadm
+/etc/drbd.conf
+/etc/drbd.d
+/etc/drbd.d/global_common.conf
+/etc/ha.d/resource.d/drbddisk
+/etc/ha.d/resource.d/drbdupper
+/etc/xen/scripts/block-drbd
+/lib/drbd
+/lib/drbd/drbd
+/lib/drbd/drbdadm-83
+/lib/drbd/drbdadm-84
+/lib/drbd/drbdsetup-83
+/lib/drbd/drbdsetup-84
+/usr/lib/.build-id
+/usr/lib/.build-id/14
+/usr/lib/.build-id/14/c9b3670ebdeb5347159a62767f22f575943bc9
+/usr/lib/.build-id/27
+/usr/lib/.build-id/27/7aec394d39a0ac5f4cb06653d71ba830ba6191
+/usr/lib/.build-id/32
+/usr/lib/.build-id/32/615cdf8d89f94714e92300982e08f7112c96b0
+/usr/lib/.build-id/8b
+/usr/lib/.build-id/8b/26eb22c3ad3a3c81e0f0962559572d8eab83e4
+/usr/lib/.build-id/9b
+/usr/lib/.build-id/9b/9063ed8f7953f22c1c450be1196ea3f0ec2118
+/usr/lib/.build-id/9f
+/usr/lib/.build-id/9f/e453ac67618a433d797fbf3187ab31c5dc47a9
+/usr/lib/.build-id/da
+/usr/lib/.build-id/da/67f8650e931d14220ddd6d5a7c6c5d40c3cd8f
+/usr/lib/.build-id/ed
+/usr/lib/.build-id/ed/770044dcf9492668281ac5193e2f0f35700279
+/usr/lib/drbd
+/usr/lib/drbd/crm-fence-peer.9.sh
+/usr/lib/drbd/crm-fence-peer.sh
+/usr/lib/drbd/crm-unfence-peer.9.sh
+/usr/lib/drbd/crm-unfence-peer.sh
+/usr/lib/drbd/notify-emergency-reboot.sh
+/usr/lib/drbd/notify-emergency-shutdown.sh
+/usr/lib/drbd/notify-io-error.sh
+/usr/lib/drbd/notify-out-of-sync.sh
+/usr/lib/drbd/notify-pri-lost-after-sb.sh
+/usr/lib/drbd/notify-pri-lost.sh
+/usr/lib/drbd/notify-pri-on-incon-degr.sh
+/usr/lib/drbd/notify-split-brain.sh
+/usr/lib/drbd/notify.sh
+/usr/lib/drbd/outdate-peer.sh
+/usr/lib/drbd/rhcs_fence
+/usr/lib/drbd/snapshot-resync-target-lvm.sh
+/usr/lib/drbd/stonith_admin-fence-peer.sh
+/usr/lib/drbd/unsnapshot-resync-target-lvm.sh
+/usr/lib/ocf/resource.d/linbit/drbd
+/usr/lib/ocf/resource.d/linbit/drbd.shellfuncs.sh
+/usr/lib/systemd/system/drbd.service
+/usr/lib/tmpfiles.d/drbd.conf
+/usr/lib/udev/rules.d/65-drbd.rules
+/usr/sbin/drbdadm
+/usr/sbin/drbdmeta
+/usr/sbin/drbdmon
+/usr/sbin/drbdsetup
+/usr/share/cluster/drbd.metadata
+/usr/share/cluster/drbd.sh
+/usr/share/doc/drbd90-utils
+/usr/share/doc/drbd90-utils/COPYING
+/usr/share/doc/drbd90-utils/ChangeLog
+/usr/share/doc/drbd90-utils/README.md
+/usr/share/doc/drbd90-utils/drbd.conf.example
+/usr/share/man/ja/man5/drbd.conf-8.4.5.gz
+/usr/share/man/ja/man5/drbd.conf-9.0.5.gz
+/usr/share/man/ja/man5/drbd.conf.5.gz
+/usr/share/man/ja/man8/drbd-8.4.8.gz
+/usr/share/man/ja/man8/drbd-9.0.8.gz
+/usr/share/man/ja/man8/drbd.8.gz
+/usr/share/man/ja/man8/drbdadm-8.4.8.gz
+/usr/share/man/ja/man8/drbdadm-9.0.8.gz
+/usr/share/man/ja/man8/drbdadm.8.gz
+/usr/share/man/ja/man8/drbddisk-8.4.8.gz
+/usr/share/man/ja/man8/drbdmeta-8.4.8.gz
+/usr/share/man/ja/man8/drbdmeta-9.0.8.gz
+/usr/share/man/ja/man8/drbdmeta.8.gz
+/usr/share/man/ja/man8/drbdmon-9.0.8.gz
+/usr/share/man/ja/man8/drbdmon.8.gz
+/usr/share/man/ja/man8/drbdsetup-8.4.8.gz
+/usr/share/man/ja/man8/drbdsetup-9.0.8.gz
+/usr/share/man/ja/man8/drbdsetup.8.gz
+/usr/share/man/man5/drbd.conf-8.3.5.gz
+/usr/share/man/man5/drbd.conf-8.4.5.gz
+/usr/share/man/man5/drbd.conf-9.0.5.gz
+/usr/share/man/man5/drbd.conf.5.gz
+/usr/share/man/man8/drbd-8.3.8.gz
+/usr/share/man/man8/drbd-8.4.8.gz
+/usr/share/man/man8/drbd-9.0.8.gz
+/usr/share/man/man8/drbd.8.gz
+/usr/share/man/man8/drbdadm-8.3.8.gz
+/usr/share/man/man8/drbdadm-8.4.8.gz
+/usr/share/man/man8/drbdadm-9.0.8.gz
+/usr/share/man/man8/drbdadm.8.gz
+/usr/share/man/man8/drbddisk-8.3.8.gz
+/usr/share/man/man8/drbddisk-8.4.8.gz
+/usr/share/man/man8/drbdmeta-8.3.8.gz
+/usr/share/man/man8/drbdmeta-8.4.8.gz
+/usr/share/man/man8/drbdmeta-9.0.8.gz
+/usr/share/man/man8/drbdmeta.8.gz
+/usr/share/man/man8/drbdmon-9.0.8.gz
+/usr/share/man/man8/drbdmon.8.gz
+/usr/share/man/man8/drbdsetup-8.3.8.gz
+/usr/share/man/man8/drbdsetup-8.4.8.gz
+/usr/share/man/man8/drbdsetup-9.0.8.gz
+/usr/share/man/man8/drbdsetup.8.gz
+/var/lib/drbd
+[me@centos8t01 ~]$
+---------------------------------------
+
 [[s-install-pkgs-ubuntu_linux]]
 ==== Ubuntu Linux
 
